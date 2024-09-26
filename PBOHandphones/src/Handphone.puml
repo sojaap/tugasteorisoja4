@@ -1,0 +1,31 @@
+@startuml handphone
+class Handphone {
+    - String merk
+    - String model
+    + Handphone(String merk, String model)
+    + void nyalakan()
+    + void matikan()
+    + void kirimpesan(String nomortujuan, String pesan)
+    + void kirimpesan(String nomortujuansatu, String nomortujuandua, String pesan)
+    + void kirimpesan(String daftarnomor, String pesan)
+}
+
+class Smartphone {
+    + Smartphone(String merk, String model)
+    + void nyalakan()
+    + void matikan()
+    + void kirimpesan(String emailtujuan, String subjek, String pesan)
+    + void aksesInternet()
+}
+
+class FeaturePhone {
+    + FeaturePhone(String merk, String model)
+    + void nyalakan()
+    + void matikan()
+    + void kirimpesan(String nomortujuan, String pesan)
+    + void mainGameSnake()
+}
+
+Handphone <|-- Smartphone
+Handphone <|-- FeaturePhone
+@enduml
