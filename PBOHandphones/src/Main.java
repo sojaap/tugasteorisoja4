@@ -12,6 +12,7 @@ public class Main {
             hp.nyalakan();
             hp.kirimpesan("08123456789", "selamat siang!");
             hp.kirimpesan("0248388445", "0345642343", "test pesan");
+            hp.kirimpesan(args, "Nomor Ini Didaftarkan oleh Fulan");
             hp.matikan();
             System.out.println();
         }
